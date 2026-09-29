@@ -1,1 +1,172 @@
-I will now generate the interactive Digital Safety Guide web application for seniors, built entirely using responsive HTML5 and CSS3 with accessibility controls and interactive elements.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guia de Segurança Digital Acessível</title>
+  <style>
+    /* Estilos de acessibilidade e alto contraste */
+    :root {
+      --cor-fundo: #F8FAFC;
+      --cor-cartao: #FFFFFF;
+      --cor-texto: #0F172A;
+      --cor-primaria: #1E3A8A;
+      --cor-alerta: #991B1B;
+      --cor-sucesso: #166534;
+      --cor-borda: #475569;
+      --cor-foco: #D97706;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 22px; /* Fonte ampliada para facilidade de leitura */
+      line-height: 1.6;
+      background-color: var(--cor-fundo);
+      color: var(--cor-texto);
+      padding: 20px;
+    }
+
+    header {
+      background-color: var(--cor-primaria);
+      color: #FFFFFF;
+      padding: 28px 20px;
+      border-radius: 16px;
+      text-align: center;
+      margin-bottom: 30px;
+      border: 3px solid #000000;
+    }
+
+    h1 {
+      font-size: 34px;
+      margin-bottom: 10px;
+    }
+
+    .subtitulo {
+      font-size: 22px;
+      font-weight: normal;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .cartao {
+      background-color: var(--cor-cartao);
+      border: 3px solid var(--cor-borda);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 24px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .cartao h2 {
+      font-size: 28px;
+      color: var(--cor-primaria);
+      margin-bottom: 14px;
+    }
+
+    .cartao p {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+
+    .alerta {
+      background-color: #FEF2F2;
+      border-left: 8px solid var(--cor-alerta);
+      padding: 16px;
+      margin-top: 14px;
+      border-radius: 8px;
+      color: var(--cor-alerta);
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .btn-ajuda {
+      display: block;
+      width: 100%;
+      background-color: var(--cor-primaria);
+      color: #FFFFFF;
+      text-align: center;
+      text-decoration: none;
+      font-size: 26px;
+      font-weight: bold;
+      padding: 22px;
+      border-radius: 16px;
+      margin-top: 30px;
+      border: 3px solid #000000;
+      cursor: pointer;
+    }
+
+    .btn-ajuda:hover, .btn-ajuda:focus {
+      background-color: #0F172A;
+      outline: 5px solid var(--cor-foco);
+    }
+
+    a:focus, button:focus {
+      outline: 5px solid var(--cor-foco);
+      outline-offset: 4px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 18px;
+      color: #475569;
+    }
+  </style>
+</head>
+<body>
+
+  <header role="banner">
+    <h1>Guia de Segurança Digital</h1>
+    <p class="subtitulo">Dicas simples e práticas para navegar na internet com proteção</p>
+  </header>
+
+  <main role="main">
+
+    <article class="cartao">
+      <h2>1. Cuidado com Pedidos de Dinheiro</h2>
+      <p>Se um familiar ou amigo pedir dinheiro urgente no WhatsApp com um número novo, não faça PIX ou transferência imediatamente.</p>
+      <div class="alerta">
+        Regra importante: Ligue para o número antigo do seu familiar para confirmar se é ele mesmo.
+      </div>
+    </article>
+
+    <article class="cartao">
+      <h2>2. Senhas e Códigos são Segredos Seus</h2>
+      <p>Sua senha do banco e os códigos recebidos por mensagem (SMS) nunca devem ser informados para ninguém.</p>
+      <div class="alerta">
+        Atenção: O banco nunca liga pedindo sua senha nem código de confirmação.
+      </div>
+    </article>
+
+    <article class="cartao">
+      <h2>3. Não Abra Links Desconhecidos</h2>
+      <p>Mensagens prometendo prêmios, presentes, dinheiro fácil ou avisando que sua conta foi bloqueada costumam ser golpes.</p>
+      <p>Evite clicar em links enviados por desconhecidos.</p>
+    </article>
+
+    <article class="cartao">
+      <h2>4. Instale Aplicativos Apenas nas Lojas Oficiais</h2>
+      <p>Baixe jogos e utilitários apenas através da <strong>Play Store</strong> (no Android) ou da <strong>App Store</strong> (no iPhone).</p>
+    </article>
+
+    <a href="#" class="btn-ajuda" role="button">
+      Ficou com dúvidas? Peça ajuda a um familiar de confiança
+    </a>
+
+    </main>
+
+  <footer>
+    <p>Aplicativo Acessível de Segurança Digital para Idosos</p>
+  </footer>
+
+</body>
+</html>
